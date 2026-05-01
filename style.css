@@ -1,0 +1,182 @@
+        *{
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+            /* border: 1px solid black; */
+        }
+
+        :root{
+        --clr-primary: #012169;
+        --clr-primary-hover: #D4285B;
+        --clr-secondary: #009EFF;
+        --clr-secondary-hover: white;
+        --clr-neutral: #F0F0F0;
+        
+        --radius: 0.2rem;
+        }
+        
+        .navbar{
+            font-size: 16px;
+            box-shadow: 0px 0px 3px gray;
+            background: var(--clr-secondary-hover);
+            margin: 0;
+            padding-top: 0;
+            padding-left: 2%;
+            padding-right: 2%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .navbar a{
+            font-weight: 700;
+        }
+
+        /* FOR MOBILE/SMALL SCREENS!!! */
+        @media screen and (max-width: 760px){
+            .navbar{
+                flex-direction: column;
+                align-self: center;
+            }
+            .nav-list{
+                align-self: center;
+            }
+            .logo-list{
+                align-self: center;
+            }
+            main{
+                flex-direction: column;
+                align-self: center;
+            }
+        }
+
+        .navbar .active-page{
+            text-decoration: underline var(--clr-primary-hover) 2px;
+            text-underline-offset: 4px;
+            text-decoration-skip-ink: auto;
+        }
+
+        .logo-list{
+            font-size: 20px;
+            align-self: center;
+        }
+
+        .logo-item{
+            border-radius: 0;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        .logo-item a{
+            text-decoration: none;
+            color: var(--clr-primary);
+            font-family: "Cinzel", serif;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        #baseball{
+            scale: 34%;
+        }
+
+        .logo-list a:hover{
+            color: var(--clr-primary-hover);
+            transition: all 200ms ease-in;
+        }
+
+        .nav-list{
+            border-radius: 0;
+            display: flex;
+            justify-content: flex-end;
+            overflow: hidden;
+            align-items: center;
+            padding-left: 0;
+            column-gap: 3vw;
+        }
+
+        .nav-item{
+            list-style-type: none;
+            margin: 10px;
+        }
+
+        .nav-item a{
+            text-decoration: none;
+            color: var(--clr-primary);
+        }
+
+        .nav-item a:hover{
+            color: var(--clr-primary-hover);
+            transition: all 200ms ease-in;
+        }
+
+        body{
+            font-size: 20px;
+            background-color: var(--clr-secondary-hover);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        main{
+            margin-left: 10vw;
+            margin-right: 10vw;
+            min-height: 100vh;
+            margin-top: 3vw;
+            justify-content: space-between;
+            
+        }
+
+        .headshot{
+            width: 15%;
+            height: 15%;
+            border-radius: 10%;
+            border: .5vw solid var(--clr-primary);
+            margin: 3vw;
+        }
+        
+        .description{
+            font-size: 16px;
+            margin: 0;
+            display: flex;
+        }
+
+        .section-header{
+            font-weight: bold;
+            color: var(--clr-primary);
+            height: 40px;
+            margin-top: 13vh;
+            margin-left: 2rem;
+        }
+
+        .section-intro{
+            font-weight: bold;
+            color: var(--clr-primary);
+            height: 28px;
+            font-size: 20px;
+        }
+
+        .p-text{
+            font-size: 16px;
+        }
+        
+        footer{
+            text-align: left;
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 12px;
+            background: var(--clr-secondary-hover);
+            box-shadow: 0px 0px 3px gray;
+            margin: 0;
+            padding: 1rem 0;
+            border-radius: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            overflow: hidden;
+            
+        }
