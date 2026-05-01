@@ -4,74 +4,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <style>
-
-        *{
-            font-family: "Montserrat", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-            box-sizing: border-box;
-        }
-
-        :root {
-        --clr-primary: #012169;
-        --clr-primary-hover: #D4285B;
-        --clr-secondary: #009EFF;
-        --clr-secondary-hover: white;
-        --clr-neutral: #F0F0F0;
-        
-        --radius: 0.2rem;
-        }
-        body { 
-            font-size: 20px;
-            background-color: var(--clr-secondary-hover);
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        .nav-list{
-            background: var(--clr-secondary-hover);
-            box-shadow: 0px 0px 3px gray;
-            margin: 0;
-            padding: 1rem 0;
-            border-radius: var(--radius);
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .nav-item{
-            list-style: none;
-            margin-right: 3rem;
-        }
-
-        .nav-item a {
-            text-decoration: none;
-            color: var(--clr-primary);
-        }
-
-        .nav-item a:hover {
-            color: var(--clr-primary-hover);
-            transition: all 200ms ease-in;
-        }
-
-        .nav-item:first-child {
-            margin-right:auto;
-            margin-left: 3rem;
-        }
-        
-        footer {
-            text-align: left;
-            width: 100%;
-            padding: 10px;
-            font-size: 12px;
-        }
-
-        
-
-    </style>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+   
     <!-- Define Character Set -->
     <meta charset="UTF-8">
     
@@ -91,29 +27,32 @@
     <meta name="robots" content="noindex">
     
     <title>Jonny Gaynor</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-        <nav>
+        <nav class="navbar">
+            <div class="logo-list">
+                <li class="logo-item"><a href="index.html"><img id="baseball" src="/img/baseball-scaled.png" alt="Jonny Baseball" style="vertical-align: middle; height: 0;">JONATHAN GAYNOR</a></li>
+                <!-- <li class="logo-image"><a href="index.html"><img src="/img/baseball-scaled.png" alt="Jonny Baseball"></a></li> -->
+            </div>
             <ul class="nav-list">
-                <li class="nav-item"><a href="/">JONATHAN GAYNOR</a></li>
-                <li class="nav-item"><a href="/">HOME</a></li>
+                <li class="nav-item"><a class="active-page" href="/">HOME</a></li>
                 <li class="nav-item"><a href="/about">ABOUT</a></li>                    
                 <li class="nav-item"><a href="/resume">RESUME</a></li>
-                <li class="nav-item"><a href="/contact">CONTACT</a></li>
             </ul>
         </nav>
-    
-    <section id="description" style="font-size: 16px">
-        <img src="Jonny Headshot GC Baseball.webp"
-             style="display:block; float: right;"
-             alt="Headshot of Jonathan Gaynor"
-             width="10%"
-             height="10%">
-        Hello and welcome to my website!<br><br>
-        My name is Jonathan Gaynor and I am an aspiring Mechanical Engineer!<br><br>
-        This website has some background info on me, my projects, my resume, and some other cool items!
-    </section>
+    <main>
+        <section class="description">
+            <img class="headshot" src="/img/Jonny Headshot GC Baseball.webp" alt="Headshot of Jonathan Gaynor">
+            <p>Hello and welcome to my website!<br><br>
+            My name is Jonathan Gaynor and I am an aspiring Mechanical Engineer!<br><br>
+            This website has some background info on me, my projects, my resume, and some other cool items!<br><br>
+            This is still a WIP! Updates coming out (hopefully!) consistently!
+            </p>
+        </section>
+    </main>
     <!-- Footer -->
-    <footer>&copy Copyright 2026 Jonathan Gaynor. All rights reserved.</footer>
+    <footer>&copy Copyright <script>document.write(new Date().getFullYear())</script> Jonathan Gaynor. All rights reserved.</footer>
 </body>
 </html>
