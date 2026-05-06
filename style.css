@@ -36,27 +36,7 @@
         }
 
         /* FOR MOBILE/SMALL SCREENS!!! */
-        @media screen and (max-width: 760px){
-            .navbar{
-                flex-direction: column;
-                align-self: center;
-            }
-            .nav-list{
-                align-self: center;
-            }
-            .logo-list{
-                padding-top: 1rem;
-                align-self: center;
-            }
-            main{
-                flex-direction: column;
-                align-self: center;
-            }
-            .pdf{
-                width: 100vw;
-                height: 80vh;
-            }
-        }
+       
 
         .navbar .active-page{
             text-decoration: underline var(--clr-primary-hover) 2px;
@@ -119,16 +99,18 @@
             transition: all 200ms ease-in;
         }
 
-        body{
+        html, body{
             font-size: 20px;
             background-color: var(--clr-secondary-hover);
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
+            padding: 0;
+            width: 100%;
         }
 
         main{
-            margin-left: 10vw;
-            margin-right: 10vw;
+            margin-left: 20vw;
+            margin-right: 20vw;
             min-height: 100vh;
             margin-top: 3vw;
             justify-content: space-between;
@@ -137,27 +119,30 @@
 
         .headshot{
             width: 15%;
-            height: 15%;
+            height: auto;
             border-radius: 10%;
             border: .5vw solid var(--clr-primary);
-            margin: 3vw;
+            margin: 0vw;
         }
         
         .description{
             font-size: 16px;
             margin: 0;
-            display: flex;
+            width: 100%;
+            display: block;
+            text-align: center;
         }
 
-        .section-header{
+        .pageheader{
             font-weight: bold;
             color: var(--clr-primary);
             height: 40px;
             margin-top: 13vh;
-            margin-left: 2rem;
+            /* margin-left: 2rem; */
+            
         }
 
-        .section-intro{
+        .section-title{
             font-weight: bold;
             color: var(--clr-primary);
             height: 28px;
@@ -166,6 +151,10 @@
 
         .p-text{
             font-size: 16px;
+            text-indent: 30px;
+            margin: 0;
+            margin-bottom: 1rem;
+            
         }
 
         .pdf{
@@ -189,4 +178,80 @@
             align-items: center;
             overflow: hidden;
             
+        }
+        @media only screen and (max-width: 768px){
+            nav.navbar{
+                flex-direction: column;
+                align-self: center;
+                width: 100%;
+                padding: 0;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                justify-content: center !important;
+                align-items: center !important;
+                margin: 0;
+            }
+            .logo-list{
+                padding-top: 1rem;
+                align-self: center;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            .logo-item{
+                justify-content: center;
+                width: 100%;
+            }
+            .nav-list{
+                align-self: center;
+                justify-content: space-evenly;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                column-gap: 0;
+                row-gap: 0;
+                gap: 0vw;
+                text-align: center;
+            }
+            .nav-item{
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+            .nav-item a{
+                text-align: center;
+            }
+            body main{
+                flex-direction: column;
+                align-self: center;
+                justify-content: space-between;
+                padding: 0 !important;
+                margin: 0 !important;
+                width: 100% !important;
+            }
+            body{
+                overflow-x: hidden;
+                width: 100%;
+                max-width: 100%;
+            }
+            .pdf{
+                width: 100vw;
+                height: 80vh;
+            }
+            .description .headshot{
+                width: 30% !important;
+                margin: 0 !important;
+                display: block;
+            }
+            .description {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100% !important;
+            }
         }
