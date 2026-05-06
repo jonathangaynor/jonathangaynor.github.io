@@ -292,7 +292,7 @@
             height: calc(20rem/16);
             font-size: calc(18rem/16);
             margin-top: 2rem;
-            scroll-margin-top: 5.8em;
+            scroll-margin-top: 10rem;
             white-space: nowrap;
         }
 
