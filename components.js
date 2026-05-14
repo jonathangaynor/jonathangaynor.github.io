@@ -5,7 +5,7 @@ fetch('header.html')
     document.getElementById('header').innerHTML = html;
 
     // set active page based on current URL
-    const currentPage = window.location.pathname.split('').pop();
+    const currentPage = window.location.pathname.split('/').pop();
     const navLinks = document.querySelectorAll('.nav-item a');
     navLinks.forEach(link => {
         const linkPage = link.getAttribute('href');
@@ -30,7 +30,7 @@ fetch('about-navbar.html')
         }
 
         // set active about section based on current URL
-        const currentPage = window.location.pathname.split('').pop();
+        const currentPage = window.location.pathname.split('/').pop();
         const aboutLinks = document.querySelectorAll('.about-item a');
         aboutLinks.forEach(link => {
             const linkPage = link.getAttribute('href');
