@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav>
+    <a class="nav-logo" href="#hero">JG.dev</a>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+    </ul>
+</nav>
+<section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+        <p class="hero-eyebrow">Jonathan Gaynor · MS Mechanical Engineering</p>
+        <h1 class="hero-title">
+            <span class="word">Engineering</span>
+            <span class="word">for</span>
+            <span class="word">Better</span>
+        </h1>
+        <p class="hero-subtitle">Medical Device Design · Prototyping · Production · Columbia University</p>
+    </div>
+    <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+<section id="about">
+    <div class="about-left">
+        <p class="section-label">About</p>
+        <div class="about-name-row">
+            <h2 class="about-name">Jonny Gaynor</h2>
+            <img class="profile-photo" src="img/Jonny Headshot GC Baseball.webp" alt="Jonathan Gaynor Headshot">
+        </div>
+        <p class="about-title">Mechanical Engineer · Medical Device Designer · Miami Beach, FL</p>
+        <div class="about-bio">
+            <p>I'm a mechanical engineer pursuing my MS at Columbia University, specializing in medical device design, prototyping, and production. My work sits at the intersection of engineering precision and human impact — building devices that improve lives.</p>
+            <p>Growing up in Miami Beach, I developed a drive to create things that matter. From robotic arms and catheter prototypes at Penn State to playing college baseball with my brother at Grinnell, every experience has sharpened both my technical skill and my perspective on what engineering is really for.</p>
+            <p>At Columbia, I'm focused on translating that foundation into medical devices that reach patients who need them.</p>
+        </div>
+    </div>
+    <div class="about-right">
+        <p class="section-label">Education</p>
+        <div class="edu-card">
+            <p class="edu-school">Columbia University</p>
+            <p class="edu-degree">MS · Mechanical Engineering — Medical Device Focus</p>
+            <p class="edu-dates">Aug 2026 - Dec 2027</p>
+        </div>
+        <div class="edu-card">
+            <p class="edu-school">Grinnell College</p>
+            <p class="edu-degree">BA · General Science — Mathematics</p>
+            <p class="edu-dates">Aug 2024 - Dec 2026</p>
+        </div>
+        <div class="edu-card">
+            <p class="edu-school">Penn State University</p>
+            <p class="edu-degree">Courses in Electrical-Mechanical Engineering Technology</p>
+            <p class="edu-dates">Aug 2022 - May 2024</p>
+        </div>
+    </div>
+</section>
+<section id="projects">
+    <div class="projects-header">
+        <p class="section-label">Work</p>
+        <h2 class="projects-title">Projects</h2>
+    </div>
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <p class="project-tag">Medical Device · Prototype</p>
+            <h3 class="project-name">Low-Cost Catheter Machine</h3>
+            <p class="project-desc">Designed and prototyped a catheter device reducing manufacturing cost from over $1,000 to less than $25. Integrated load-based measurement, thermal monitoring, and timing systems for clinical reliability.</p>
+            <div class="project-footer">
+                <span class="project-chip">Wiring</span>
+                <span class="project-chip">Prototyping</span>
+                <span class="project-chip">Sensors</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <p class="project-tag">Robotics · Fabrication</p>
+            <h3 class="project-name">Robotic Arm & Autonomous Car</h3>
+            <p class="project-desc">Built a fully functional robotic arm and autonomous car from scratch. Designed mechanical linkages, programmed motion control, and fabricated all components.</p>
+            <div class="project-footer">
+                <span class="project-chip">Robotics</span>
+                <span class="project-chip">CAD</span>
+                <span class="project-chip">Programming</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <p class="project-tag">Humanitarian · 3D Printing</p>
+            <h3 class="project-name">3D-Printed Prosthetic Arms</h3>
+            <p class="project-desc">Designed and manufactured 20+ precision prosthetic arm components for underprivileged children via Helping Hands Miami Beach using PrusaSlicer and CAD.</p>
+            <div class="project-footer">
+                <span class="project-chip">3D Printing</span>
+                <span class="project-chip">PrusaSlicer</span>
+                <span class="project-chip">Assembly</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section id="resume">
+    <p class="section-label" style="justify-content: center;">Resume</p>
+    <h2 class="resume-title">Full CV</h2>
+    <p class="resume-desc">A complete overview of my engineering experience, education, and projects.</p>
+    <a class="resume-btn" href="docs/Jonathan_Gaynor_Resume.pdf" target="_blank">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="12" y1="18" x2="12" y2="12"/>
+            <line x1="9" y1="15" x2="15" y2="15"/>
+        </svg>
+        View Resume
+    </a>
+</section>
+<footer>
+    <p class="footer-copy">© <span id="year"></span> Jonathan Gaynor. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="mailto:jeg2256@columbia.edu">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22, 4-10, 11L2, 4"/>
+            </svg>
+            Email</a>
+        <a href="https://github.com/jonathangaynor" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+            </svg>
+            GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/gaynorjonathan/" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            LinkedIn
+        </a>
+    </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
