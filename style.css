@@ -487,3 +487,82 @@ footer {
 
 
 /* MAKE IT WORK ON MOBILE! */
+
+@media (max-width: 768px) {
+
+    /* NAV */
+    nav {
+        padding: 1rem 1.5rem;
+    }
+
+    .nav-links {
+        gap: 1.25rem;
+    }
+
+    .nav-links a {
+        font-size: 0.7rem;
+    }
+
+    /* HERO */
+
+    .hero-eyebrow {
+        font-size: 0.65rem;
+        letter-spacing: 0.1em;
+    }
+
+    .her-subtitle {
+        font-size: 0.85rem;
+    }
+
+    /* ABOUT */
+
+    #about {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 6rem 1.5rem 4rem;
+    }
+
+    .about-right {
+        padding-top: 0;
+    }
+
+    .about-name-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-photo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 1rem;
+    }
+
+    /* PROJECTS */
+
+    #projects {
+        padding: 5rem 1.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* RESUME */
+
+    #resume {
+        padding: 5rem 1.5rem;
+    }
+
+    /* FOOTER */
+    footer {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem 1.5rem;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+}
